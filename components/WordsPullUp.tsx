@@ -29,7 +29,7 @@ export default function WordsPullUp({
         return (
           <span
             key={`${word}-${i}`}
-            className={`mr-[0.2em] inline-block overflow-hidden pb-[0.12em] last:mr-0 ${
+            className={`mr-[0.2em] inline-block overflow-hidden pb-[0.28em] last:mr-0 ${
               showAsterisk && isLastWord ? 'pt-[0.35em] pr-[0.35em]' : ''
             }`}
           >

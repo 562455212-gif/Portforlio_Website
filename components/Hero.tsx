@@ -54,11 +54,11 @@ export default function Hero() {
           </div>
         </nav>
 
-        <div className="absolute bottom-0 left-0 right-0 z-10 p-4 sm:p-6 md:p-8 lg:p-10">
+        <div className="absolute bottom-0 left-0 right-0 z-10 p-4 pb-8 sm:p-6 sm:pb-10 md:p-8 md:pb-12 lg:p-10 lg:pb-14">
           <div className="grid grid-cols-12 items-end gap-4 md:gap-6">
             <div className="col-span-12 md:col-span-8">
               <h1
-                className="text-[26vw] font-medium leading-[0.85] tracking-[-0.07em] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw]"
+                className="pb-[0.08em] text-[26vw] font-medium leading-[0.85] tracking-[-0.07em] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw]"
                 style={{
                   color: '#E1E0CC',
                   textShadow: '0 2px 24px rgba(0,0,0,0.55)',
