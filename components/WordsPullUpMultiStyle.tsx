@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -19,10 +21,13 @@ export default function WordsPullUpMultiStyle({
   const isInView = useInView(ref, { once: true })
 
   const words = segments.flatMap((segment) =>
-    segment.text.split(' ').filter(Boolean).map((word) => ({
-      word,
-      className: segment.className ?? '',
-    })),
+    segment.text
+      .split(' ')
+      .filter(Boolean)
+      .map((word) => ({
+        word,
+        className: segment.className ?? '',
+      })),
   )
 
   return (
@@ -33,7 +38,7 @@ export default function WordsPullUpMultiStyle({
       {words.map(({ word, className: wordClass }, i) => (
         <span
           key={`${word}-${i}`}
-          className="inline-block overflow-hidden mr-[0.25em] last:mr-0"
+          className="mr-[0.25em] inline-block overflow-hidden last:mr-0"
         >
           <motion.span
             className={`inline-block ${wordClass}`}

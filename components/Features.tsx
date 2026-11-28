@@ -1,3 +1,5 @@
+'use client'
+
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ArrowRight, Check } from 'lucide-react'
@@ -33,6 +35,7 @@ function ChecklistCard({
       transition={{ delay, duration: 0.7, ease: CARD_EASE }}
     >
       <div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={icon}
           alt=""
@@ -100,10 +103,10 @@ export default function Features() {
 
         <div
           ref={gridRef}
-          className="grid grid-cols-1 gap-3 sm:gap-2 md:grid-cols-2 md:gap-1 lg:grid-cols-4 lg:h-[480px]"
+          className="grid grid-cols-1 gap-3 sm:gap-2 md:grid-cols-2 md:gap-1 lg:h-[480px] lg:grid-cols-4"
         >
           <motion.div
-            className="relative min-h-[280px] overflow-hidden rounded-2xl sm:min-h-[320px] sm:rounded-3xl lg:min-h-0 lg:h-full"
+            className="relative min-h-[280px] overflow-hidden rounded-2xl sm:min-h-[320px] sm:rounded-3xl lg:h-full lg:min-h-0"
             initial={{ scale: 0.95, opacity: 0 }}
             animate={
               isInView ? { scale: 1, opacity: 1 } : { scale: 0.95, opacity: 0 }

@@ -4,7 +4,7 @@ A dark, cinematic landing page for Prisma, a creative studio network.
 
 ## Stack
 
-- Vite + React 18 + TypeScript
+- Next.js 15 + React 18 + TypeScript
 - Tailwind CSS 3
 - Framer Motion
 - Lucide React
@@ -20,5 +20,5 @@ npm run dev
 
 ```bash
 npm run build
-npm run preview
+npm start
 ```
