@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, useInView } from 'framer-motion'
 import { useRef, type CSSProperties } from 'react'
 
@@ -27,12 +29,12 @@ export default function WordsPullUp({
         return (
           <span
             key={`${word}-${i}`}
-            className={`inline-block overflow-hidden mr-[0.2em] last:mr-0 ${
+            className={`mr-[0.2em] inline-block overflow-hidden last:mr-0 ${
               showAsterisk && isLastWord ? 'pt-[0.35em] pr-[0.35em]' : ''
             }`}
           >
             <motion.span
-              className="inline-block relative"
+              className="relative inline-block"
               initial={{ y: 20, opacity: 0 }}
               animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
               transition={{
