@@ -64,7 +64,7 @@ export default function Hero() {
                   textShadow: '0 2px 24px rgba(0,0,0,0.55)',
                 }}
               >
-                <WordsPullUp text="Prisma" showAsterisk />
+                <WordsPullUp text="Rong" showAsterisk />
               </h1>
             </div>
 
@@ -80,9 +80,10 @@ export default function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.7, ease }}
               >
-                Prisma is a worldwide network of visual artists, filmmakers and
-                storytellers bound not by place, status or labels but by passion
-                and hunger to unlock potential through our unique perspectives.
+                This is where I tell my career transition story — a little more
+                loosely, and a little more honestly, than a resume. You won&apos;t
+                find a longer CV here. I wanted a quieter corner to share how I
+                got here, and what I&apos;m exploring next.
               </motion.p>
 
               <motion.a
@@ -93,7 +94,7 @@ export default function Hero() {
                 transition={{ delay: 0.7, duration: 0.7, ease }}
               >
                 <span className="text-sm font-medium text-black sm:text-base">
-                  Join the lab
+                  Read more
                 </span>
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition-transform group-hover:scale-110 sm:h-10 sm:w-10">
                   <ArrowRight className="h-4 w-4 text-primary sm:h-5 sm:w-5" />

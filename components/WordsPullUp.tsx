@@ -29,7 +29,7 @@ export default function WordsPullUp({
         return (
           <span
             key={`${word}-${i}`}
-            className={`mr-[0.2em] inline-block overflow-hidden last:mr-0 ${
+            className={`mr-[0.2em] inline-block overflow-hidden pb-[0.12em] last:mr-0 ${
               showAsterisk && isLastWord ? 'pt-[0.35em] pr-[0.35em]' : ''
             }`}
           >
@@ -44,13 +44,12 @@ export default function WordsPullUp({
               }}
             >
               {chars.map((char, charIndex) => {
-                const isLastA =
+                const isAsteriskHost =
                   showAsterisk &&
                   isLastWord &&
-                  char.toLowerCase() === 'a' &&
                   charIndex === chars.length - 1
 
-                if (isLastA) {
+                if (isAsteriskHost) {
                   return (
                     <span key={charIndex} className="relative inline-block">
                       {char}
