@@ -30,7 +30,8 @@ export default function Hero() {
         />
 
         <div className="noise-overlay pointer-events-none absolute inset-0 opacity-[0.7] mix-blend-overlay" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+        <div className="pointer-events-none absolute inset-0 bg-black/25" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
 
         <nav className="absolute left-1/2 top-0 z-20 -translate-x-1/2">
           <div className="flex items-center gap-3 rounded-b-2xl bg-black px-4 py-2 sm:gap-6 md:gap-12 md:rounded-b-3xl md:px-8 lg:gap-14">
@@ -58,7 +59,10 @@ export default function Hero() {
             <div className="col-span-12 md:col-span-8">
               <h1
                 className="text-[26vw] font-medium leading-[0.85] tracking-[-0.07em] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw]"
-                style={{ color: '#E1E0CC' }}
+                style={{
+                  color: '#E1E0CC',
+                  textShadow: '0 2px 24px rgba(0,0,0,0.55)',
+                }}
               >
                 <WordsPullUp text="Prisma" showAsterisk />
               </h1>
@@ -66,8 +70,12 @@ export default function Hero() {
 
             <div className="col-span-12 flex flex-col gap-4 pb-2 sm:gap-5 md:col-span-4 md:pb-4">
               <motion.p
-                className="text-xs text-primary/70 sm:text-sm md:text-base"
-                style={{ lineHeight: 1.2 }}
+                className="text-xs sm:text-sm md:text-base"
+                style={{
+                  lineHeight: 1.2,
+                  color: 'rgba(225, 224, 204, 0.92)',
+                  textShadow: '0 1px 12px rgba(0,0,0,0.65)',
+                }}
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.7, ease }}
