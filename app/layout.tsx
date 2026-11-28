@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Prisma — Creative Studio',
+  title: 'Rong — My Space',
   description:
-    'Prisma is a worldwide network of visual artists, filmmakers and storytellers.',
+    'A quieter corner to share how I got here, and what I\'m exploring next.',
 }
 
 export default function RootLayout({

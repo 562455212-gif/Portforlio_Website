@@ -1,6 +1,6 @@
-# Prisma — Creative Studio Landing Page
+# Rong — My Space
 
-A dark, cinematic landing page for Prisma, a creative studio network.
+A dark, cinematic personal landing page.
 
 ## Stack
 
