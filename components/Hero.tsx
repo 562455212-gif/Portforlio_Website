@@ -12,8 +12,7 @@ const NAV_ITEMS = [
   'Inquiries',
 ]
 
-const HERO_VIDEO =
-  'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4'
+const HERO_VIDEO = '/hero.mp4'
 
 const ease = [0.16, 1, 0.3, 1] as const
 
