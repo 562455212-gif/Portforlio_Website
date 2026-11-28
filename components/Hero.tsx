@@ -76,8 +76,8 @@ export default function Hero() {
                   color: 'rgba(225, 224, 204, 0.92)',
                   textShadow: '0 1px 12px rgba(0,0,0,0.65)',
                 }}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ delay: 0.5, duration: 0.7, ease }}
               >
                 This is where I tell my career transition story — a little more
@@ -89,8 +89,8 @@ export default function Hero() {
               <motion.a
                 href="#inquiries"
                 className="group inline-flex w-fit items-center gap-2 rounded-full bg-primary py-1.5 pl-5 pr-1.5 transition-all hover:gap-3 sm:pl-6 sm:pr-1.5"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ delay: 0.7, duration: 0.7, ease }}
               >
                 <span className="text-sm font-medium text-black sm:text-base">

@@ -18,7 +18,7 @@ export default function WordsPullUpMultiStyle({
   className = '',
 }: WordsPullUpMultiStyleProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(ref, { once: true, amount: 0.15 })
 
   const words = segments.flatMap((segment) =>
     segment.text
@@ -38,12 +38,12 @@ export default function WordsPullUpMultiStyle({
       {words.map(({ word, className: wordClass }, i) => (
         <span
           key={`${word}-${i}`}
-          className="mr-[0.25em] inline-block overflow-hidden last:mr-0"
+          className="mr-[0.25em] inline-block overflow-hidden pb-[0.12em] last:mr-0"
         >
           <motion.span
             className={`inline-block ${wordClass}`}
-            initial={{ y: 20, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{ y: 20 }}
+            animate={isInView ? { y: 0 } : { y: 20 }}
             transition={{
               delay: i * 0.08,
               duration: 0.6,

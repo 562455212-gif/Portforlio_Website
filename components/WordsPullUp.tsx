@@ -17,7 +17,7 @@ export default function WordsPullUp({
   showAsterisk = false,
 }: WordsPullUpProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(ref, { once: true, amount: 0.15 })
   const words = text.split(' ')
 
   return (
@@ -35,8 +35,8 @@ export default function WordsPullUp({
           >
             <motion.span
               className="relative inline-block"
-              initial={{ y: 20, opacity: 0 }}
-              animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+              initial={{ y: 20 }}
+              animate={isInView ? { y: 0 } : { y: 20 }}
               transition={{
                 delay: i * 0.08,
                 duration: 0.6,

@@ -30,8 +30,8 @@ function ChecklistCard({
   return (
     <motion.div
       className="flex h-full flex-col justify-between rounded-2xl bg-[#212121] p-5 sm:rounded-3xl sm:p-6 md:p-7"
-      initial={{ scale: 0.95, opacity: 0 }}
-      animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.95, opacity: 0 }}
+      initial={{ scale: 0.95 }}
+      animate={isInView ? { scale: 1 } : { scale: 0.95 }}
       transition={{ delay, duration: 0.7, ease: CARD_EASE }}
     >
       <div>
@@ -107,10 +107,8 @@ export default function Features() {
         >
           <motion.div
             className="relative min-h-[280px] overflow-hidden rounded-2xl sm:min-h-[320px] sm:rounded-3xl lg:h-full lg:min-h-0"
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={
-              isInView ? { scale: 1, opacity: 1 } : { scale: 0.95, opacity: 0 }
-            }
+            initial={{ scale: 0.95 }}
+            animate={isInView ? { scale: 1 } : { scale: 0.95 }}
             transition={{ delay: 0, duration: 0.7, ease: CARD_EASE }}
           >
             <video
