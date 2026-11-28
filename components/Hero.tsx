@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react'
 import WordsPullUp from './WordsPullUp'
 
 const NAV_ITEMS = [
-  'Our story',
-  'Collective',
-  'Workshops',
-  'Programs',
-  'Inquiries',
+  'Home',
+  'Srory',
+  'Portforlio',
+  'Dream',
+  'Contact',
 ]
 
 const HERO_VIDEO = '/hero.mp4'
